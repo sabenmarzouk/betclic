@@ -1,0 +1,41 @@
+### Add Player 1
+POST http://localhost:8080/game/players
+Content-Type: application/json
+
+playerName1
+
+### Add Player 2
+POST http://localhost:8080/game/players
+Content-Type: application/json
+
+playerName2
+
+###
+
+### Get Player Info
+GET http://localhost:8080/game/players/5c56fce3-bfec-4ddd-9eb7-fd2ca0e03382
+Accept: application/json
+
+###
+
+### Update Player Points
+PUT http://localhost:8080/game/players/0c0003da-2b4b-481c-a603-d3d6cd707ca1/points
+Content-Type: application/json
+
+1000
+
+###
+
+### Get Game Ranking
+GET http://localhost:8080/game/players/rank
+Accept: application/json
+
+###
+
+### Change Game State
+PUT http://localhost:8080/game/state
+Content-Type: application/json
+
+{
+  "state": "ended"
+}
