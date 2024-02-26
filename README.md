@@ -95,12 +95,24 @@ You can build and run your Docker container with the following commands:
 docker build -t betclic-app .
 docker run -d -p 8080:8080 --name betclic-app-container betclic-app
  ```
-## Deploying to AWS
 
-We can use Amazon Elastic Container Service (ECS) to deploy the app for scalable and managed application hosting.
+## TODO (Rest à faire): 
 
+### Implement Reactive Endpoints with Kotlin and Spring WebFlux
 
-## Using IntelliJ HTTP Client for API Testing
+As part of the ongoing development of the Betclic project, there's a plan to enhance the application by adopting reactive programming principles. This involves leveraging Spring WebFlux with Kotlin to create non-blocking, asynchronous, and event-driven services that can handle a large number of concurrent connections efficiently.
+
+### Objectives
+
+- **Adopt Reactive Programming**: Transition from traditional MVC to a reactive application architecture to improve scalability and resource utilization.
+- **Implement Non-blocking Endpoints**: Utilize Spring WebFlux to develop reactive RESTful endpoints.
+- **Leverage Kotlin Coroutines**: Take advantage of Kotlin's coroutines support in Spring WebFlux for more readable asynchronous code.
+
+### Deploying to AWS
+
+Use Amazon Elastic Container Service (ECS) to deploy the app for scalable and managed application hosting.
+
+## Test using IntelliJ HTTP Client for API Testing
 There is an http intellij client to facilitate interacting with rest service 
 ```shell
 betclic.http
