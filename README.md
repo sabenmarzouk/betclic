@@ -96,7 +96,7 @@ docker build -t betclic-app .
 docker run -d -p 8080:8080 --name betclic-app-container betclic-app
  ```
 
-## TODO (Rest à faire): 
+## TODO (Reste à faire): 
 
 ### Implement Reactive Endpoints with Kotlin and Spring WebFlux
 
