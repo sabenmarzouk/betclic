@@ -25,38 +25,13 @@ The infrastructure module implements the technical details that support the appl
 
 ## Building the Project
 
-The project uses Gradle as its build system. Within the `settings.gradle` (or `settings.gradle.kts` for Kotlin DSL) file, the project structure is defined as follows:
-
+The project uses Gradle as its build system. Within the `settings.gradle` (or `settings.gradle.kts` for Kotlin DSL) file
 
 ## Prerequisites
 
 Before you begin, ensure you have met the following requirements:
 
 - **Java Development Kit (JDK)**: JDK 21 or newer must be installed on your machine. You can verify your JDK installation by running `java -version` in your terminal.
-# Betclic Project
-
-The Betclic project is a Kotlin-based application designed following the Hexagonal Architecture principles. It divides the application into two main modules: `betclic-application` and `betclic-infrastructure`, to cleanly separate the domain and business logic from the technical details of the application infrastructure.
-
-## Project Structure
-
-### `betclic-application` Module
-
-This module encapsulates the core domain logic and business rules of the application. It is framework-agnostic and focuses on expressing the domain model, use cases, and ports necessary for the application's functionality. Specifically, the module contains:
-
-- **Domain Objects**: Entities and value objects that represent the core concepts of the domain.
-- **Use Cases**: Application-specific business rules.
-- **Ports**: Interfaces for communicating with external actors or services, both for incoming and outgoing interactions.
-
-Additionally, the module includes acceptance tests and unit tests to ensure the correctness of the domain logic.
-
-### `betclic-infrastructure` Module
-
-The infrastructure module implements the technical details that support the application. It leverages Spring for dependency injection and includes:
-
-- **Adapters**: Concrete implementations of the ports defined in the application module, providing the connection between the application core and external services or frameworks.
-- **REST Controller**: Exposes the application's functionality through HTTP endpoints.
-- **H2 Database**: An in-memory database used for persisting application data.
-- **Integration and Unit Tests**: Tests to ensure the infrastructure components interact correctly with the application core and external services.
 
 ## Build Commands
 
@@ -65,7 +40,7 @@ To build the project, follow these steps:
 1. **Clone the repository**:
 
     ```shell
-    git clone https://yourrepositoryurl.com/betclic.git
+    git clone https://github.com/sabenmarzouk/betclic.git
     cd betclic
     ```
 
@@ -81,20 +56,6 @@ To build the project, follow these steps:
     ./gradlew :betclic-application:build
     ```
 
-## Running Tests
-
-- **Run all tests in the project**:
-
-    ```shell
-    ./gradlew test
-    ```
-
-- **Run tests in a specific module**:
-
-    ```shell
-    ./gradlew :betclic-application:test
-    ./gradlew :betclic-infrastructure:test
-    ```
 
 ## Running the Application with Gradle
 
